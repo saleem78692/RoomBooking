@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- <header>
+            <div class="row bg-dark text-white p-1 d-none d-lg-flex m-0">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div><i class="bi bi-envelope-heart"></i> saleem@gmail.com || <i class="bi bi-telephone"></i> +91
+                        9137497814</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 text-end">
+                    <div><i class="bi bi-stopwatch"></i> Monday to Saturday Emergency</div>
+                </div>
+            </div>
+
+            <nav class="sticky-top top-0 bg-white shadow-sm">
+                <div class="row m-0">
+                    <div class="col-12 d-flex justify-content-between p-2 align-items-center">
+                        <div class="fw-bold fs-4">Logo</div>
+
+                        <div class="d-none d-lg-flex gap-5 p-2 align-items-center">
+                            <div><a href="#" class="nav-link fw-bold">Home</a></div>
+                            <div><a href="#" class="nav-link fw-bold">About</a></div>
+                            <div><a href="#" class="nav-link fw-bold">Services</a></div>
+                            <div><a href="#" class="nav-link fw-bold">Contact</a></div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="btn btn-primary d-none d-lg-inline-block">Login</button>
+                            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#mobileNav" aria-controls="mobileNav">
+                                <i class="bi bi-list fs-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="mobileNavLabel">Logo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column gap-3">
+                        <a href="#" class="nav-link fw-bold">Home</a>
+                        <a href="#" class="nav-link fw-bold">About</a>
+                        <a href="#" class="nav-link fw-bold">Services</a>
+                        <a href="#" class="nav-link fw-bold">Contact</a>
+                        <button class="btn btn-primary mt-2">Login</button>
+                    </div>
+                </div>
+            </div>
+        </header> -->
+
+        <header>
+            <!-- Top Header -->
+            <div class="container-fluid bg-dark text-white py-2 d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <i class="bi bi-envelope-fill"></i> saleem@gmail.com
+                            &nbsp;&nbsp;|
+                            &nbsp;&nbsp;
+                            <i class="bi bi-telephone-fill"></i> +91 9137497814
+                        </div>
+
+                        <div class="col-lg-6 text-end">
+                            <i class="bi bi-facebook me-3"></i>
+                            <i class="bi bi-instagram me-3"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg custom-navbar" id="navbar">
+                <div class="container">
+
+                    <a class="navbar-brand fw-bold fs-3 text-primary" href="#">
+                        <img src="assests/images/logo.png" height="60px" alt="">
+                    </a>
+
+                    <!-- Mobile Button -->
+                    <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+
+                        <i class="bi bi-list fs-2"></i>
+
+                    </button>
+
+                    <!-- Desktop Menu -->
+                    <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+
+                        <ul class="navbar-nav align-items-center gap-4">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#hero">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#service">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Gallery</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                                <button class="btn-login rounded-pill px-4 py-2">
+                                    Login
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- Mobile Offcanvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+                <div class="offcanvas-header">
+
+                    <a class="navbar-brand fw-bold fs-3 text-primary" href="#">
+                        <img src="assests/images/logo.png" height="60px" alt="">
+                    </a>
+
+                    <button class="btn-close" data-bs-dismiss="offcanvas">
+                    </button>
+
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="btn-login rounded-pill px-4 py-2 w-100">
+                                Login
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Hero  -->
+
+        <section id="hero" class="py-5">
+
+            <div class="overlay"></div>
+
+            <div class="container h-100">
+
+                <div class="row h-100 align-items-center">
+
+                    <div class="col-lg-6 col-md-8">
+
+                        <div class="hero-content">
+
+                            <span class="hero-tag">
+                                PREMIUM PAYING GUEST FACILITY
+                            </span>
+
+                            <h1 class="display-3 fw-bold mt-3">
+                                Your Home Away <br> From Home
+                            </h1>
+
+                            <p class="lead my-4">
+                                Experience premium PG accommodation with fully furnished
+                                rooms, high-speed Wi-Fi, CCTV security, laundry facility,
+                                power backup and peaceful surroundings near Amity University.
+                            </p>
+
+                            <div class="d-flex gap-3 flex-wrap">
+
+                                <a href="#" class="btn btn-book py-3 px-4 rounded-pill">
+                                    Book Now
+                                </a>
+
+                                <a href="#" class="btn btn-outline-light px-4 py-3 rounded-pill">
+                                    Contact Us
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About  -->
+
+        <section id="about" class="py-5">
+
+            <div class="container">
+
+                <div class="row align-items-center gy-5">
+
+                    <!-- Images -->
+                    <div class="col-lg-6">
+
+                        <div class="about-images position-relative">
+
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=700&auto=format&fit=crop"
+                                class="img1 shadow" alt="">
+
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=700&auto=format&fit=crop"
+                                class="img2 shadow" alt="">
+
+                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=700&auto=format&fit=crop"
+                                class="img3 shadow" alt="">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-6">
+
+                        <span class="about-title">
+                            ABOUT US
+                        </span>
+
+                        <h2 class="fw-bold mt-3">
+                            Comfortable Living at
+                            <span>Vedik Abode</span>
+                        </h2>
+
+                        <p class="text-muted mt-3">
+                            Vedik Abode provides premium PG accommodation for students
+                            and working professionals with modern amenities,
+                            a safe environment, and affordable pricing.
+                        </p>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="feature-box">
+
+                                    <i class="bi bi-house-door-fill"></i>
+
+                                    <div>
+                                        <h6>Luxury Rooms</h6>
+                                        <small>Fully Furnished Rooms</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="feature-box">
+
+                                    <i class="bi bi-wifi"></i>
+
+                                    <div>
+                                        <h6>Free Wi-Fi</h6>
+                                        <small>High Speed Internet</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="feature-box">
+
+                                    <i class="bi bi-shield-check"></i>
+
+                                    <div>
+                                        <h6>24×7 Security</h6>
+                                        <small>CCTV Monitoring</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="feature-box">
+
+                                    <i class="bi bi-lightning-charge-fill"></i>
+
+                                    <div>
+                                        <h6>Power Backup</h6>
+                                        <small>24 Hours Electricity</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="btn btn-about mt-3 px-4 py-3 rounded-pill">
+                            Explore More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Service  -->
+
+        <section id="service" class="py-5">
+
+            <div class="container">
+
+                <!-- Heading -->
+
+                <div class="text-center mb-5">
+
+                    <span class="section-title">
+                        OUR ROOMS
+                    </span>
+
+                    <h2 class="fw-bold mt-3">
+                        Choose Your Perfect Room
+                    </h2>
+
+                    <p class="text-muted">
+                        Comfortable & Affordable Rooms with Modern Facilities
+                    </p>
+
+                </div>
+
+                <!-- Filter Buttons -->
+
+                <div class="text-center mb-5">
+
+                    <button class="btn room-filter active" data-filter="all">
+                        All Rooms
+                    </button>
+
+                    <button class="btn room-filter" data-filter="single">
+                        Single Sharing
+                    </button>
+
+                    <button class="btn room-filter" data-filter="double">
+                        Double Sharing
+                    </button>
+
+                    <button class="btn room-filter" data-filter="triple">
+                        Triple Sharing
+                    </button>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Room 1 -->
+
+                    <div class="col-lg-4 col-md-6 room-item" data-filter="single">
+
+                        <div class="room-card">
+
+                            <div class="room-image">
+
+                                <img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="img-fluid">
+
+                                <span class="room-status available">
+                                    Available
+                                </span>
+
+                            </div>
+
+                            <div class="p-4">
+
+                                <h4>Single Sharing Room</h4>
+
+                                <h5 class="price">
+                                    ₹7,500 <small>/ Month</small>
+                                </h5>
+
+                                <div class="room-feature">
+
+                                    <span><i class="bi bi-wifi"></i> WiFi</span>
+                                    <span><i class="bi bi-tv"></i> Smart TV</span>
+                                    <span><i class="bi bi-snow"></i> AC</span>
+                                    <span><i class="bi bi-shield-check"></i> Security</span>
+
+                                </div>
+
+                                <div class="d-flex gap-2 mt-4">
+
+                                    <button class="btn btn-book w-50">
+                                        Book Now
+                                    </button>
+
+                                    <button class="btn btn-detail w-50">
+                                        View Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Room 2 -->
+
+                    <div class="col-lg-4 col-md-6 room-item" data-filter="single">
+
+                        <div class="room-card">
+
+                            <div class="room-image">
+
+                                <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="img-fluid">
+
+                                <span class="room-status booked">
+                                    Booked
+                                </span>
+
+                            </div>
+
+                            <div class="p-4">
+
+                                <h4>Luxury Single Room</h4>
+
+                                <h5 class="price">
+                                    ₹8,500 <small>/ Month</small>
+                                </h5>
+
+                                <div class="room-feature">
+
+                                    <span><i class="bi bi-wifi"></i> WiFi</span>
+                                    <span><i class="bi bi-cup-hot"></i> Food</span>
+                                    <span><i class="bi bi-lightning"></i> Power</span>
+                                    <span><i class="bi bi-camera-video"></i> CCTV</span>
+
+                                </div>
+
+                                <div class="d-flex gap-2 mt-4">
+
+                                    <button class="btn btn-book w-50">
+                                        Book Now
+                                    </button>
+
+                                    <button class="btn btn-detail w-50">
+                                        View Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Room 3 -->
+
+                    <div class="col-lg-4 col-md-6 room-item" data-filter="double">
+
+                        <div class="room-card">
+
+                            <div class="room-image">
+
+                                <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="img-fluid">
+
+                                <span class="room-status available">
+                                    Available
+                                </span>
+
+                            </div>
+
+                            <div class="p-4">
+
+                                <h4>Double Sharing Room</h4>
+
+                                <h5 class="price">
+                                    ₹5,500 <small>/ Month</small>
+                                </h5>
+
+                                <div class="room-feature">
+
+                                    <span><i class="bi bi-wifi"></i> WiFi</span>
+                                    <span><i class="bi bi-fan"></i> Fan</span>
+                                    <span><i class="bi bi-cup-hot"></i> Food</span>
+                                    <span><i class="bi bi-house-door"></i> Wardrobe</span>
+
+                                </div>
+
+                                <div class="d-flex gap-2 mt-4">
+
+                                    <button class="btn btn-book w-50">
+                                        Book Now
+                                    </button>
+
+                                    <button class="btn btn-detail w-50">
+                                        View Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Room 4 -->
+
+                    <div class="col-lg-4 col-md-6 room-item" data-filter="double">
+
+                        <div class="room-card">
+
+                            <div class="room-image">
+
+                                <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                    class="img-fluid">
+
+                                <span class="room-status booked">
+                                    Booked
+                                </span>
+
+                            </div>
+
+                            <div class="p-4">
+
+                                <h4>Premium Double Room</h4>
+
+                                <h5 class="price">
+                                    ₹6,500 <small>/ Month</small>
+                                </h5>
+
+                                <div class="room-feature">
+
+                                    <span><i class="bi bi-wifi"></i> WiFi</span>
+                                    <span><i class="bi bi-tv"></i> TV</span>
+                                    <span><i class="bi bi-lightning"></i> Power</span>
+                                    <span><i class="bi bi-droplet"></i> RO Water</span>
+
+                                </div>
+
+                                <div class="d-flex gap-2 mt-4">
+
+                                    <button class="btn btn-book w-50">
+                                        Book Now
+                                    </button>
+
+                                    <button class="btn btn-detail w-50">
+                                        View Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Room 5 -->
+
+                    <div class="col-lg-4 col-md-6 room-item" data-filter="triple">
+
+                        <div class="room-card">
+
+                            <div class="room-image">
+
+                                <img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                    class="img-fluid">
+
+                                <span class="room-status available">
+                                    Available
+                                </span>
+
+                            </div>
+
+                            <div class="p-4">
+
+                                <h4>Triple Sharing Room</h4>
+
+                                <h5 class="price">
+                                    ₹4,000 <small>/ Month</small>
+                                </h5>
+
+                                <div class="room-feature">
+
+                                    <span><i class="bi bi-wifi"></i> WiFi</span>
+                                    <span><i class="bi bi-fan"></i> Fan</span>
+                                    <span><i class="bi bi-cup-hot"></i> Food</span>
+                                    <span><i class="bi bi-shield-check"></i> Security</span>
+
+                                </div>
+
+                                <div class="d-flex gap-2 mt-4">
+
+                                    <button class="btn btn-book w-50">
+                                        Book Now
+                                    </button>
+
+                                    <button class="btn btn-detail w-50">
+                                        View Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Room 6 -->
+
+                    <div class="col-lg-4 col-md-6 room-item" data-filter="triple">
+
+                        <div class="room-card">
+
+                            <div class="room-image">
+
+                                <img src="https://images.unsplash.com/photo-1664711942326-2c3351e215e6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                    class="img-fluid">
+
+                                <span class="room-status booked">
+                                    Booked
+                                </span>
+
+                            </div>
+
+                            <div class="p-4">
+
+                                <h4>Deluxe Triple Room</h4>
+
+                                <h5 class="price">
+                                    ₹4,500 <small>/ Month</small>
+                                </h5>
+
+                                <div class="room-feature">
+
+                                    <span><i class="bi bi-wifi"></i> WiFi</span>
+                                    <span><i class="bi bi-tv"></i> TV</span>
+                                    <span><i class="bi bi-camera-video"></i> CCTV</span>
+                                    <span><i class="bi bi-house-heart"></i> Housekeeping</span>
+
+                                </div>
+
+                                <div class="d-flex gap-2 mt-4">
+
+                                    <button class="btn btn-book w-50">
+                                        Book Now
+                                    </button>
+
+                                    <button class="btn btn-detail w-50">
+                                        View Details
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Gallary  -->
+
+        <section id="gallery" class="py-5">
+
+            <div class="container">
+
+                <!-- Heading -->
+
+                <div class="text-center mb-5">
+
+                    <span class="gallery-title">
+                        ROOM GALLERY
+                    </span>
+
+                    <h2 class="fw-bold mt-3">
+                        Explore Our Premium Rooms
+                    </h2>
+
+                    <p class="text-muted">
+                        Modern, Comfortable & Affordable Living Spaces
+                    </p>
+
+                </div>
+
+                <!-- Slider -->
+
+                <div class="swiper gallerySwiper">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- Card 1 -->
+
+                        <div class="swiper-slide">
+
+                            <div class="gallery-card">
+
+                                <div class="gallery-img">
+
+                                    <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        class="img-fluid">
+
+                                    <div class="gallery-overlay">
+
+                                        <a href="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            class="glightbox btn btn-light rounded-circle" data-type="image"
+                                            data-gallery="room-gallery">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-4">
+
+                                    <h5>Luxury Single Room</h5>
+
+                                    <p class="text-muted mb-0">
+                                        Fully Furnished with AC & Wi-Fi
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="swiper-slide">
+
+                            <div class="gallery-card">
+
+                                <div class="gallery-img">
+
+                                    <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+                                        class="img-fluid">
+
+                                    <div class="gallery-overlay">
+
+                                        <a href="https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+                                            class="glightbox btn btn-light rounded-circle" data-type="image"
+                                            data-gallery="room-gallery">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-4">
+
+                                    <h5>Premium Double Room</h5>
+
+                                    <p class="text-muted mb-0">
+                                        Spacious & Comfortable
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 3 -->
+
+                        <div class="swiper-slide">
+
+                            <div class="gallery-card">
+
+                                <div class="gallery-img">
+
+                                    <img src="https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                        class="img-fluid">
+
+                                    <div class="gallery-overlay">
+
+                                        <a href="https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                            class="glightbox btn btn-light rounded-circle" data-type="image"
+                                            data-gallery="room-gallery">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-4">
+
+                                    <h5>Triple Sharing Room</h5>
+
+                                    <p class="text-muted mb-0">
+                                        Affordable & Modern
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 4 -->
+
+                        <div class="swiper-slide">
+
+                            <div class="gallery-card">
+
+                                <div class="gallery-img">
+
+                                    <img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                        class="img-fluid">
+
+                                    <div class="gallery-overlay">
+
+                                        <a href="https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                            class="glightbox btn btn-light rounded-circle" data-type="image"
+                                            data-gallery="room-gallery">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-4">
+
+                                    <h5>Luxury Interior</h5>
+
+                                    <p class="text-muted mb-0">
+                                        Elegant Furniture Design
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 5 -->
+
+                        <div class="swiper-slide">
+
+                            <div class="gallery-card">
+
+                                <div class="gallery-img">
+
+                                    <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                        class="img-fluid">
+
+                                    <div class="gallery-overlay">
+
+                                        <a href="https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                            class="glightbox btn btn-light rounded-circle" data-type="image"
+                                            data-gallery="room-gallery">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-4">
+
+                                    <h5>Premium Living Area</h5>
+
+                                    <p class="text-muted mb-0">
+                                        Comfortable & Peaceful
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 6 -->
+
+                        <div class="swiper-slide">
+
+                            <div class="gallery-card">
+
+                                <div class="gallery-img">
+
+                                    <img src="https://images.unsplash.com/photo-1536494126589-29fadf0d7e3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                        class="img-fluid">
+
+                                    <div class="gallery-overlay">
+
+                                        <a href="https://images.unsplash.com/photo-1536494126589-29fadf0d7e3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fHJvb218ZW58MHx8MHx8fDA%3D"
+                                            class="glightbox btn btn-light rounded-circle" data-type="image"
+                                            data-gallery="room-gallery">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-4">
+
+                                    <h5>Modern Bedroom</h5>
+
+                                    <p class="text-muted mb-0">
+                                        Luxury Lifestyle Experience
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Navigation -->
+
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-button-prev"></div>
+
+                    <div class="swiper-pagination mt-4"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Testomonial  -->
+
+        <section id="Testomonial" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+
+                    <span class="gallery-title">
+                        TESTOMONIAL
+                    </span>
+
+                    <h2 class="fw-bold mt-3">
+                        What Our Students Say
+                    </h2>
+
+                    <p class="text-muted">
+                        See Why Students Love Living With Us
+                    </p>
+
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=150&auto=format&fit=crop"
+                                    alt="Rohit Deshmukh" class="rounded-circle profile-img">
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Rohit Deshmukh</h5>
+                                    <small class="text-muted">B.Tech CSE, Amity University</small>
+                                </div>
+                            </div>
+                            <div class="stars mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text mb-0">
+                                "The high-speed Wi-Fi is incredibly stable, which is a lifesaver for my coding projects
+                                and online exams. The daily housekeeping service keeps the room neat and clean."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop"
+                                    alt="Sneha Iyer" class="rounded-circle profile-img">
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Sneha Iyer</h5>
+                                    <small class="text-muted">MBA Student, Amity Noida</small>
+                                </div>
+                            </div>
+                            <div class="stars mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text mb-0">
+                                "Security was my parents' biggest concern. With 24/7 CCTV cameras, biometric entry, and
+                                cooperative wardens, I feel completely safe here. Highly recommended for girls!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop"
+                                    alt="Aayush Saxena" class="rounded-circle profile-img">
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Aayush Saxena</h5>
+                                    <small class="text-muted">Software Engineer, Tech Mahindra</small>
+                                </div>
+                            </div>
+                            <div class="stars mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="testimonial-text mb-0">
+                                "Unlike other hostels, the food here actually tastes like home-cooked meals. Plus, the
+                                power backup and RO water systems work flawlessly. Excellent service!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact  -->
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <span class="contact-subtitle">
+                        GET IN TOUCH
+                    </span>
+                    <h2 class="fw-bold mt-3">
+                        Contact Vedik Abode
+                    </h2>
+                    <p class="text-muted">
+                        Have questions? Reach out to us and we'll reply as soon as possible.
+                    </p>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Contact Information & Map -->
+                    <div class="col-lg-6">
+                        <div class="contact-info-wrap">
+                            <h4 class="fw-bold mb-4" style="color: var(--primary);">Contact Details</h4>
+
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="contact-icon-box">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1" style="color: var(--primary);">Location</h6>
+                                    <p class="text-muted mb-0">Sec 62, Noida, Uttar Pradesh, 201301</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="contact-icon-box">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1" style="color: var(--primary);">Phone Number</h6>
+                                    <p class="text-muted mb-0">+91 9137497814</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="contact-icon-box">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1" style="color: var(--primary);">Email Address</h6>
+                                    <p class="text-muted mb-0">saleem@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="contact-icon-box">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1" style="color: var(--primary);">Visiting Hours</h6>
+                                    <p class="text-muted mb-0">Monday - Saturday: 09:00 AM - 08:00 PM</p>
+                                </div>
+                            </div>
+
+                            <!-- Map -->
+                            <div class="map-container shadow-sm mt-4 rounded-4 overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4332832599723!2d77.36224377620317!3d28.616783875673895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce56041ab6c4f%3A0xb31dbfe26ccf152d!2sSector%2062%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-6">
+                        <div class="contact-form-card shadow-sm p-4 p-md-5 rounded-4">
+                            <h4 class="fw-bold mb-4" style="color: var(--primary);">Send Message</h4>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label fw-semibold">Your Name</label>
+                                        <input type="text" class="form-control custom-input" id="name"
+                                            placeholder="Mo Saleem" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label fw-semibold">Phone Number</label>
+                                        <input type="tel" class="form-control custom-input" id="phone"
+                                            placeholder="+91 9137497814" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label fw-semibold">Email Address</label>
+                                        <input type="email" class="form-control custom-input" id="email"
+                                            placeholder="[EMAIL_ADDRESS]" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label fw-semibold">Message</label>
+                                        <textarea class="form-control custom-input" id="message" rows="5"
+                                            placeholder="Write your message here..." required></textarea>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-book py-3 w-100 rounded-pill fw-bold">Send
+                                            Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-logo mb-3">
+                            <img src="assests/images/logo.png" height="55px" alt="Vedik Abode Logo">
+                        </div>
+                        <p class="text-muted">Premium living spaces designed for comfort, security, and convenience near
+                            Amity University.</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="footer-title fw-bold mb-3">Quick Links</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#service">Rooms</a></li>
+                            <li><a href="#Testomonial">Testimonial</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5 class="footer-title fw-bold mb-3">Contact Info</h5>
+                        <ul class="list-unstyled footer-contact">
+                            <li><i class="bi bi-geo-alt-fill"></i> Sec 62, Noida, Uttar Pradesh</li>
+                            <li><i class="bi bi-telephone-fill"></i> +91 9137497814</li>
+                            <li><i class="bi bi-envelope-fill"></i> saleem@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title fw-bold mb-3">Subscribe</h5>
+                        <p class="text-muted">Get latest updates on room availability.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-top mt-4 pt-4">
+                    <div class="row text-center text-muted">
+                        <div class="col-md-6">
+                            <p class="mb-0">© 2024 Vedik Abode. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="assests/Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
