@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -328,14 +329,15 @@ body {
 }
 
 @media(max-width:992px) {
-    .about-div{
+    .about-div {
         flex-direction: column-reverse;
     }
+
     .about-images {
         height: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;            
+        gap: 20px;
         padding: 10px;
     }
 
@@ -588,16 +590,17 @@ body {
 
 .gallerySwiper {
     padding: 20px 5px 60px;
-    
+
 }
 
-.swiper-slide{
+.swiper-slide {
     padding: 20px 0;
 }
-.swiper-pagination{
+
+.swiper-pagination {
     /* background-color: gray; */
     margin: -10px;
-    
+
 }
 
 .gallery-card {
@@ -722,7 +725,7 @@ body {
     height: 12px;
     background: #999;
     opacity: 1;
-    
+
 
 }
 
@@ -758,7 +761,7 @@ body {
     .swiper-button-prev {
 
         display: none !important;
-        
+
     }
 
 }
@@ -1001,117 +1004,240 @@ body {
 
 
 
- /* Booking Modal  */
+/* Booking Modal  */
 
- .booking-modal{
+.booking-modal {
 
-    border:none;
-    border-radius:20px;
-    overflow:hidden;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
-
-}
-.modal-header{
-
-    background:linear-gradient(135deg,#0B1F4D,#173E8F);
-    color:#fff;
-    padding:25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
 
 }
 
-.modal-header h3{
+.modal-header {
 
-    color:#fff;
-
-}
-
-.modal-header small{
-
-    color:#ddd;
+    background: linear-gradient(135deg, #0B1F4D, #173E8F);
+    color: #fff;
+    padding: 25px;
 
 }
 
-.btn-close{
+.modal-header h3 {
 
-    background-color:#fff;
-    border-radius:50%;
-    opacity:1;
-
-}
-.modal-body{
-
-    padding:35px;
-    background:#f8f9fa;
-
-}
-.form-label{
-
-    font-weight:600;
-    color:#0B1F4D;
-    margin-bottom:8px;
+    color: #fff;
 
 }
 
-.form-label i{
+.modal-header small {
 
-    color:#D4A017;
-    margin-right:6px;
-
-}
-.custom-input{
-
-    border-radius:12px;
-    border:2px solid #e5e5e5;
-
-    padding:12px 15px;
-
-    transition:.3s;
+    color: #ddd;
 
 }
 
-.custom-input:focus{
+.btn-close {
 
-    border-color:#D4A017;
-
-    box-shadow:0 0 12px rgba(212,160,23,.25);
-
-}
-
-.modal-footer{
-
-    padding:20px 35px;
-    background:#fff;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
 
 }
 
-.booking-btn{
+.modal-body {
 
-    background:#D4A017;
-    color:#fff;
-    border:none;
+    padding: 35px;
+    background: #f8f9fa;
+
+}
+
+.form-label {
+
+    font-weight: 600;
+    color: #0B1F4D;
+    margin-bottom: 8px;
+
+}
+
+.form-label i {
+
+    color: #D4A017;
+    margin-right: 6px;
+
+}
+
+.custom-input {
+
+    border-radius: 12px;
+    border: 2px solid #e5e5e5;
+
+    padding: 12px 15px;
+
+    transition: .3s;
+
+}
+
+.custom-input:focus {
+
+    border-color: #D4A017;
+
+    box-shadow: 0 0 12px rgba(212, 160, 23, .25);
+
+}
+
+.modal-footer {
+
+    padding: 20px 35px;
+    background: #fff;
+
+}
+
+.booking-btn {
+
+    background: #D4A017;
+    color: #fff;
+    border: none;
     padding: 10px 18px;
-    border-radius:40px;
+    border-radius: 40px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    transition:.3s;
-
-}
-
-.booking-btn:hover{
-
-    background:#0B1F4D;
-    color:#fff;
-
-    transform:translateY(-3px);
-
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    transition: .3s;
 
 }
 
-.btn-outline-secondary{
+.booking-btn:hover {
+
+    background: #0B1F4D;
+    color: #fff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+}
+
+.btn-outline-secondary {
     padding: 10px 18px;
-    border-radius:40px;
+    border-radius: 40px;
+
+}
+
+
+
+
+/* WhatsApp and call  */
+
+.floating-contact {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    z-index: 9999;
+
+}
+
+.floating-contact a {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    font-size: 26px;
+
+    color: #fff;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+
+    transition: .3s;
+
+    animation: pulse 2s infinite;
+
+}
+
+
+.call-btn {
+
+    background: #0B1F4D;
+
+}
+
+.call-btn:hover {
+
+    background: #D4A017;
+
+    color: #fff;
+
+    transform: scale(1.1);
+
+}
+
+
+.whatsapp-btn {
+
+    background: #25D366;
+
+}
+
+.whatsapp-btn:hover {
+
+    background: #128C7E;
+
+    color: #fff;
+
+    transform: scale(1.1);
+
+}
+
+
+@keyframes pulse {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, .5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .floating-contact {
+
+        right: 15px;
+        bottom: 20px;
+
+    }
+
+    .floating-contact a {
+
+        width: 55px;
+        height: 55px;
+
+        font-size: 22px;
+
+    }
 
 }
